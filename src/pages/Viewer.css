@@ -1,0 +1,48 @@
+.viewer-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #23232a 0%, #18181b 100%);
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .viewer-title {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .viewer-status {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .viewer-video {
+    width: 100%;
+    max-width: 800px;
+    background: #000;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .back-home-btn {
+    margin-top: 30px;
+    padding: 8px 18px;      /* Reduced padding for smaller button */
+    border: none;
+    border-radius: 8px;     /* Slightly smaller radius */
+    font-size: 0.95rem;     /* Slightly smaller font */
+    font-weight: 500;
+    cursor: pointer;
+    background: rgba(15, 188, 249, 0.6);
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .back-home-btn:hover {
+    background: rgba(233, 69, 96, 0.7);
+    transform: scale(1.05);
+  }

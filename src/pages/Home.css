@@ -1,0 +1,256 @@
+/* General Page Layout */
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+/* Input + Buttons (with blur) */
+.name-input {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  width: 200px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.name-input::placeholder {
+  color: #ccc;
+}
+
+.name-input:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stream-btn,
+.watch-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.stream-btn:hover {
+  background-color: rgba(233, 69, 96, 0.6);
+  transform: scale(1.05);
+}
+
+.watch-btn:hover {
+  background-color: rgba(15, 188, 249, 0.6);
+  transform: scale(1.05);
+}
+
+/* Video Section */
+.section-title {
+  margin-top: 60px;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Video Card */
+.video-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-name {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #eee;
+}
+
+/* Layout */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #141417;
+}
+
+/* Topbar */
+.topbar {
+  width: 100%;
+  height: 64px;
+  background: #18181b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 -1px;
+  box-shadow: 0 2px 8px 0 rgba(20,20,23,0.12);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #23232a;
+}
+
+.topbar-title {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.topbar-input {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  outline: none;
+  margin-right: 5px;
+}
+
+.topbar-input::placeholder {
+  color: #ccc;
+}
+
+/* Main Content Layout (Sidebar + Content) */
+.main-content {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background: #18181b;
+  color: #fff;
+  padding: 30px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #23232a;
+  position: static  ;
+}
+
+.sidebar-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.sidebar-list {
+  flex: 1;
+}
+
+.sidebar-channel {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.sidebar-channel:hover {
+  background: #23232a;
+}
+
+.sidebar-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #e94560;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sidebar-empty {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+/* Content Area */
+.content-area {
+  flex: 1;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #23232a 0%, #18181b 100%);
+  min-height: 100%;
+}
+
+/* Videos Grid */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 32px;
+  margin-top: 30px;
+}
+
+.no-videos {
+  color: #aaa;
+  font-size: 1.1rem;
+  text-align: center;
+  grid-column: 1 / -1;
+}

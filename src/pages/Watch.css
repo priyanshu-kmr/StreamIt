@@ -1,0 +1,62 @@
+/* Overall page container */
+.watch-container {
+    min-height: 100vh;
+    padding: 60px 20px 40px;
+    background: linear-gradient(135deg, #23232a 0%, #18181b 100%);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+  }
+  
+  /* Title */
+  .watch-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Status message */
+  .watch-status {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #ccc;
+    font-style: italic;
+  }
+  
+  /* Video player styling */
+  .watch-video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 16px;
+    background-color: #000;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  /* Back button styling */
+  .back-home-btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .back-home-btn:hover {
+    background: rgba(255, 100, 100, 0.4);
+    transform: scale(1.05);
+  }
+  
