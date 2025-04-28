@@ -1,2 +1,2 @@
 # StreamIt
-A video streaming web application 
+A video streaming web application using SocketIO
