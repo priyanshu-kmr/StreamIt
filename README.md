@@ -7,5 +7,5 @@ A video streaming web application using SocketIO. It supports both live as well 
 - run `npm install` in the root dir and as well in the  `server` directory. run `cd server` to switch to server directory.
 
 ## On demand Video stream
-- for live video streaming create a videos folder using the command `mkdir videos` while inside the `server` directory.
+- for on demand video streaming, create a videos folder using the command `mkdir videos` while inside the `server` directory.
 - drag the videos in `.mp4` format into the newly created folder. ensure that for each video there is a `.png` file with the same name for thumbnail of the video.
